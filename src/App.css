@@ -1,38 +1,74 @@
-.main {
-  background-color: #ffffff;
+div {
+  display: grid;
 }
 
-.FrontPage {
-  background-image: url("./content/FrontPage.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-clip: border-box;
+.container {
+  display:grid;
+  background-color: ffffff;
+  max-width: 1600px;
+  max-height: 2644px;
+}
+
+img {
+  /* width: 100%;
+  height: 100%; */
+  pointer-events: none;
+  -webkit-touch-callout: none;
+}
+
+.firstPage {
+  border: 1px solid red;
+  position: relative;
+  /* top: 0;
+  left: 0; */
+}
+
+.topNav {
+  position: absolute;
+  top: 18px;
+  left: 1075px;
+  height: 20px;
+  width: 201px;
+  border: 1px solid rgb(157, 255, 0);
+}
+
+.activeLink1 {
+  border: 1px solid blue;
+}
+
+.activeLink2 {
+  border: 1px solid green;
+}
+
+.underNav {
+
+}
+
+.navb {
+  border: 1px solid forestgreen;
 }
 
 .StickyNav {
-  background-image: url("./content/StickyNav.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
 }
 
 .SecondPage {
-  background-image: url("./content/SecondPage.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
+  border: 1px solid yellow;
 }
 
 .Carousel {
-  background-color: #ffffff;
+  border: 1px solid rgb(255, 0, 234);
 }
 
-.ThirdPage {
-  background-image: url("./content/ThirdPage.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
+.LastPage {
+  border: 1px solid rgb(4, 255, 0);
 }
 
 .Footer {
-  background-image: url("./content/Footer.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
+  border: 1px solid rgb(51, 0, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .Carousel {
+    /* fold the carousel for mobile */
+  }
 }
