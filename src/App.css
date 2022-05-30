@@ -1,43 +1,54 @@
 div {
-  display: grid;
+}
+
+.main {
+  
 }
 
 .container {
-  display:grid;
-  background-color: ffffff;
+  display: block;
+  margin: auto;
   max-width: 1600px;
   max-height: 2644px;
 }
 
 img {
-  /* width: 100%;
-  height: 100%; */
-  pointer-events: none;
-  -webkit-touch-callout: none;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  position: relative;
 }
 
 .firstPage {
-  border: 1px solid red;
-  position: relative;
-  /* top: 0;
-  left: 0; */
+  display: block;
+  position: absolute;
 }
 
 .topNav {
+  display: flex;
+  overflow: hidden;
   position: absolute;
-  top: 18px;
-  left: 1075px;
-  height: 20px;
-  width: 201px;
-  border: 1px solid rgb(157, 255, 0);
+  top: 1.5%;
+  left: 67.3%;
+  height: 4.2%;
+  width: 13%;
+  border: 1px solid rgb(0, 255, 170);
+  z-index: 1;
 }
 
-.activeLink1 {
-  border: 1px solid blue;
+a {
 }
 
-.activeLink2 {
-  border: 1px solid green;
+.history1 {
+  float: left;
+  width: 40%;
+  border: 1px solid rgb(255, 17, 0);
+}
+
+.team2 {
+  float: right;
+  width: 40%;
+  border: 1px solid rgb(255, 0, 242);
 }
 
 .underNav {
@@ -45,26 +56,26 @@ img {
 }
 
 .navb {
-  border: 1px solid forestgreen;
+  /* border: 1px solid forestgreen; */
 }
 
 .StickyNav {
 }
 
 .SecondPage {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .Carousel {
-  border: 1px solid rgb(255, 0, 234);
+  /* border: 1px solid rgb(255, 0, 234); */
 }
 
 .LastPage {
-  border: 1px solid rgb(4, 255, 0);
+  /* border: 1px solid rgb(4, 255, 0); */
 }
 
 .Footer {
-  border: 1px solid rgb(51, 0, 255);
+  /* border: 1px solid rgb(51, 0, 255); */
 }
 
 @media only screen and (max-width: 600px) {
