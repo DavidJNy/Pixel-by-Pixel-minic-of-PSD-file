@@ -24,7 +24,7 @@ img {
 }
 
 a:hover {
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 .topHistory, .bottomHistory {
@@ -56,7 +56,19 @@ a:hover {
   width: 12.5%;
 }
 
+.SecondPage {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
 .Carousel {
+  display: flex;
+  position: absolute;
+  column-gap: 5px;
+  bottom: 3.84%;
+  width: 56.88%;
+  height: 14.93%;
 }
 
 .LastPage {
@@ -69,26 +81,48 @@ a:hover {
   overflow: hidden;
   position: absolute;
   left: 20%;
-  width: 17.5%;
+  width: 15.5%;
   height: 100%;
 }
 
 .mtnOne {
-  position: absolute;
-  left: 0;
+  background: url('./content/MountainOneTab.jpg');
+  background-size: cover;
   width: 50%;
-  height: 100%;
+  cursor: pointer;
 }
 
 .mtnTwo {
-  position: absolute;
-  right: 0;
+  background: url('./content/MountainTwoTab.jpg');
+  background-size: cover;
   width: 50%;
+  cursor: pointer;
+}
+
+.smallTab {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  left: 20%;
+  width: 15.5%;
   height: 100%;
+  border: 1px solid red;
+}
+
+.smallMtnOne {
+
+}
+
+.smallMtnTwo {
+
 }
 
 @media only screen and (max-width: 600px) {
-  .Carousel {
-    /* fold the carousel for mobile */
+  .smallTab {
+    display: flex; 
+  }
+
+  .Tabs {
+    display: none;
   }
 }
