@@ -7,7 +7,7 @@ export default function MainNav() {
 
   return (
     
-      <div class='mainNav'>
+    <div class='mainNav sticky-top'>
         <div class='Nav'>
           <img src={BottomNav} alt=''></img>
           <a href='#history' class='History'>

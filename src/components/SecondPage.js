@@ -1,5 +1,8 @@
 import React from "react";
 
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import NextPage from '../content/SecondPage.jpg';
 import manCarousel from '../content/ManCarousel.jpg';
 import mtnCarousel from '../content/MtnCarousel.jpg';
@@ -7,20 +10,33 @@ import mtnCarousel from '../content/MtnCarousel.jpg';
 
 export default function SecondPage() {
 
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+    
+  };
+
+  const items = [
+    <img src={manCarousel} alt='' ></img>,
+    <img src={mtnCarousel} alt='' ></img>,
+    <img src={manCarousel} alt='' ></img>,
+    <img src={manCarousel} alt='' ></img>,
+    <img src={mtnCarousel} alt='' ></img>
+  ];
+
   return (
 
     <div class='SecondPage' id="history">
       <div class='Carousel'>
-        <img src={manCarousel} alt='' class=''></img>
-        <img src={mtnCarousel} alt='' class=''></img>
-        <img src={manCarousel} alt='' class=''></img>
-        <img src={mtnCarousel} alt='' class=''></img>
+        <AliceCarousel
+          animationDuration={800}
+          items={items}
+          mouseTracking
+          responsive={responsive}
+          controlsStrategy="alternate"
+        />
       </div>
-      {/* <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div> */}
       <img src={NextPage} alt='' ></img>
     </div>
   );

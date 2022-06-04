@@ -1,7 +1,7 @@
+
 .container {
   margin: auto;
   max-width: 1600px;
-  max-height: 2644px;
 }
 
 img {
@@ -41,10 +41,6 @@ a:hover {
   right: 0;
 }
 
-.mainNav {
-  position: sticky;
-  top: 0;
-}
 
 .Nav {
   display: flex;
@@ -69,7 +65,22 @@ a:hover {
   bottom: 3.84%;
   width: 56.88%;
   height: 14.93%;
+  border: 3px solid red;
 }
+
+.caroIMG {
+ 
+}
+
+.alice-carousel__wrapper {
+  height: 50%;
+  border: 1px solid red;
+}
+
+.alice-carousel__stage-item {
+  height: max-content;
+}
+  
 
 .LastPage {
   display: flex;
@@ -109,20 +120,16 @@ a:hover {
   border: 1px solid red;
 }
 
-.smallMtnOne {
-
-}
-
-.smallMtnTwo {
-
+.mobileTab {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .smallTab {
-    display: flex; 
+  .mobileTab {
+    display: block;
   }
 
-  .Tabs {
+  .bigScreens {
     display: none;
   }
 }
