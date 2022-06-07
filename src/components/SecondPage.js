@@ -1,43 +1,64 @@
 import React from "react";
 
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-
+import Carousel from 'react-grid-carousel'
 import NextPage from '../content/SecondPage.jpg';
 import manCarousel from '../content/ManCarousel.jpg';
 import mtnCarousel from '../content/MtnCarousel.jpg';
 
 
 export default function SecondPage() {
-
-  const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
-    
-  };
-
-  const items = [
-    <img src={manCarousel} alt='' ></img>,
-    <img src={mtnCarousel} alt='' ></img>,
-    <img src={manCarousel} alt='' ></img>,
-    <img src={manCarousel} alt='' ></img>,
-    <img src={mtnCarousel} alt='' ></img>
-  ];
+  
+  
 
   return (
-
-    <div class='SecondPage' id="history">
+<>
+      <div class='SecondPage scroll-padding-top' id="history">
       <div class='Carousel'>
-        <AliceCarousel
-          animationDuration={800}
-          items={items}
-          mouseTracking
-          responsive={responsive}
-          controlsStrategy="alternate"
-        />
+          <Carousel cols={4} rows={1} gap={10} loop showDots={true} dotColorActive='#ffffff' dotColorInactive='#636d80'>
+            <Carousel.Item>
+              <img src={manCarousel} alt=''/>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt=''/>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={manCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={manCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={manCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={manCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={manCarousel} alt='' />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={mtnCarousel} alt='' />
+            </Carousel.Item>
+          </Carousel>
       </div>
+
+      
       <img src={NextPage} alt='' ></img>
     </div>
+
+
+</>
   );
 }

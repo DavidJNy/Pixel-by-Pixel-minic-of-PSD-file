@@ -2,6 +2,7 @@
 .container {
   margin: auto;
   max-width: 1600px;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -22,6 +23,7 @@ img {
   height: 2.42%;
   width: 12.5%;
 }
+
 
 a:hover {
   border: 3px solid white;
@@ -50,9 +52,13 @@ a:hover {
   left: 67.5%;
   height: 21.62%;
   width: 12.5%;
+  scroll-behavior: smooth;
 }
 
+
 .SecondPage {
+  scroll-padding-top: 10%;
+  scroll-snap-align: start;
   display: flex;
   position: relative;
   justify-content: center;
@@ -65,24 +71,27 @@ a:hover {
   bottom: 3.84%;
   width: 56.88%;
   height: 14.93%;
-  border: 3px solid red;
 }
 
-.caroIMG {
- 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.alice-carousel__wrapper {
-  height: 50%;
-  border: 1px solid red;
-}
-
-.alice-carousel__stage-item {
-  height: max-content;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
   
 
 .LastPage {
+  scroll-snap-align: start;
   display: flex;
   position: relative;
 }

@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+testedrecruits.rar
+package-lock.json
 # testing
 /coverage
 
