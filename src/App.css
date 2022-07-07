@@ -57,6 +57,7 @@ a:hover {
 
 
 .SecondPage {
+  scroll-margin-top: 55px;
   scroll-padding-top: 10%;
   scroll-snap-align: start;
   display: flex;
